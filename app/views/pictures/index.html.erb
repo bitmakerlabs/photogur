@@ -3,28 +3,6 @@
         <h1 class="twelve columns">All Cards</h1>
     </div>
 
-    <div class="row">
-        <hr>
-        <%= form_for @picture, url: {controller: "pictures", action: "create"} do |f| %>
-            <p>
-                <%= f.label "Name" %><br>
-                <%= f.text_field :artist %>
-            </p>
-            <p>
-                <%= f.label :title %><br>
-                <%= f.text_field :title %>
-            </p>
-            <p>
-                <%= f.label :url %><br>
-                <%= f.text_field :url %>
-            </p>
-            <p>
-                <%= f.submit "Save" %>
-            </p>
-        <% end %>
-        <hr>
-    </div>
-
     <div class="cards-list">
     <% @pictures.each_slice(2) do |slice| %>
         <div class="row">
