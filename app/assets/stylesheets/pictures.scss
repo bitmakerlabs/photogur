@@ -1,13 +1,33 @@
 // Place all the styles related to the pictures controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+section {
+    position: relative;
+}
+
+.deck-count {
+    position: fixed;
+    right: 20px;
+    top: 0;
+}
 
 .card {
     background: #e9e9e9;
     border-radius: 3px;
-    margin-bottom: 30px;
+    display: inline-block;
+    margin: 0 20px 30px 0;
     overflow: hidden;
     padding: 20px;
+    width: 40%;
+
+    &.active {
+        background: lightblue;
+
+        .button {
+            background-color: red !important;
+            border-color: red !important;
+        }
+    }
 
     h5 {
         margin-bottom: 5px;
@@ -20,8 +40,11 @@
 
 .image-wrap {
     position: relative;
+    max-height: 285px;
+    overflow: hidden;
 
     img {
+        cursor: pointer;
         width: 100%;
         height: auto;
     }
