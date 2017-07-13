@@ -1,6 +1,7 @@
 // Place all the styles related to the pictures controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 section {
     position: relative;
 }
@@ -9,6 +10,14 @@ section {
     position: fixed;
     right: 20px;
     top: 0;
+}
+
+form {
+
+    p {
+        display: inline-block;
+        margin-right: 20px;
+    }
 }
 
 .card {
